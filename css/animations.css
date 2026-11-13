@@ -1,131 +1,84 @@
+/* =========================================
+   HERO ENTRANCE ANIMATIONS
+========================================= */
 
-/* =========================================================
-   PORTFOLIO ANIMATIONS
-   ========================================================= */
-
-/* ================= HERO ENTRANCE ================= */
-
-@keyframes fadeInUp {
-
-    from {
-        opacity: 0;
-        transform: translateY(35px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
-@keyframes fadeInRight {
-
-    from {
-        opacity: 0;
-        transform: translateX(40px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-}
-
-@keyframes fadeIn {
-
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-
+.hero-greeting,
+.hero-content h1,
+.hero-title,
+.hero-description,
+.hero-buttons,
+.hero-socials {
+    animation: fadeUp 0.7s ease both;
 }
 
 .hero-greeting {
-    animation: fadeInUp 0.7s ease both;
+    animation-delay: 0.1s;
 }
 
 .hero-content h1 {
-    animation: fadeInUp 0.8s ease 0.1s both;
+    animation-delay: 0.2s;
 }
 
-.hero-content h2 {
-    animation: fadeInUp 0.8s ease 0.2s both;
+.hero-title {
+    animation-delay: 0.3s;
 }
 
 .hero-description {
-    animation: fadeInUp 0.8s ease 0.3s both;
+    animation-delay: 0.4s;
 }
 
 .hero-buttons {
-    animation: fadeInUp 0.8s ease 0.4s both;
+    animation-delay: 0.5s;
 }
 
 .hero-socials {
-    animation: fadeInUp 0.8s ease 0.5s both;
+    animation-delay: 0.6s;
 }
 
 .hero-image {
-    animation: fadeInRight 1s ease 0.2s both;
+    animation: fadeIn 0.8s ease both;
+    animation-delay: 0.3s;
 }
 
-/* ================= DECORATIVE EFFECTS ================= */
 
-@keyframes floating {
+/* =========================================
+   KEYFRAMES
+========================================= */
 
-    0%, 100% {
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
         transform: translateY(0);
     }
+}
 
-    50% {
-        transform: translateY(-12px);
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
 
+    to {
+        opacity: 1;
+    }
 }
 
-.profile-placeholder {
-    animation: floating 5s ease-in-out infinite;
-}
 
-.hero-image-decoration {
-    animation: floating 6s ease-in-out infinite;
-}
-
-/* ================= CARD ANIMATIONS ================= */
-
-.skill-card,
-.project-card,
-.education-card {
-    transition:
-        transform 0.35s ease,
-        border-color 0.35s ease,
-        box-shadow 0.35s ease;
-}
-
-/* ================= BUTTON ANIMATIONS ================= */
-
-.btn {
-    transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-/* ================= SCROLL REVEAL ================= */
-
-/* JavaScript will add the visible class later. */
+/* =========================================
+   SCROLL REVEAL
+========================================= */
 
 .reveal {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
+
     transition:
-        opacity 0.7s ease,
-        transform 0.7s ease;
+        opacity 0.5s ease,
+        transform 0.5s ease;
 }
 
 .reveal.visible {
@@ -133,17 +86,34 @@
     transform: translateY(0);
 }
 
-/* ================= ACCESSIBILITY ================= */
+
+/* =========================================
+   HOVER EFFECTS
+========================================= */
+
+.skill-card,
+.project-card,
+.education-card,
+.about-detail-card {
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================= */
 
 @media (prefers-reduced-motion: reduce) {
 
     *,
     *::before,
     *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
+        animation: none !important;
+        transition: none !important;
     }
 
     .reveal {

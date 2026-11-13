@@ -1,150 +1,145 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Denis Mugo Wambui - Software Developer and Cybersecurity Enthusiast. Explore my skills, projects and professional background.">
+    <!-- Primary SEO -->
+    <title>Denis Mugo Wambui | Software Developer & Cybersecurity Enthusiast</title>
+
+    <meta name="description" content="Explore the portfolio of Denis Mugo Wambui, a Software Developer and Cybersecurity Enthusiast. Discover software projects, technical skills, and development experience.">
 
     <meta name="author" content="Denis Mugo Wambui">
     <meta name="theme-color" content="#0B1120">
 
-    <title>Denis Mugo Wambui | Software Developer</title>
+    <!-- Open Graph: Social Media Sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Denis Mugo Wambui | Software Developer">
+    <meta property="og:description" content="Explore my software development projects, technical skills, and work in technology.">
+
+    <!-- Twitter / X Sharing -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Denis Mugo Wambui | Software Developer">
+    <meta name="twitter:description" content="Explore my portfolio, software projects, and technical skills.">
 
     <!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Main stylesheet -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- Responsive stylesheet -->
     <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- Animation stylesheet -->
     <link rel="stylesheet" href="css/animations.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <header class="header">
+        <div class="container nav-container">
 
-    <header class="header" id="header">
-
-        <nav class="navbar container" aria-label="Main navigation">
-
-            <a href="#home" class="logo">
-                DENIS<span>.</span>
+            <a href="#home" class="logo" aria-label="Denis Mugo Wambui - Home">
+                <span class="logo-bracket">&lt;</span>Denis<span class="logo-bracket">/&gt;</span>
             </a>
 
-            <button class="menu-toggle"
-                    id="menu-toggle"
-                    aria-label="Open navigation menu"
-                    aria-expanded="false"
-                    aria-controls="nav-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <ul class="nav-menu" id="nav-menu">
-
-                <li><a href="#home" class="nav-link active">Home</a></li>
-
-                <li><a href="#about" class="nav-link">About</a></li>
-
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-
-                <li><a href="#education" class="nav-link">Education</a></li>
-
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-
-            </ul>
+            <nav class="navbar" aria-label="Main navigation">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
 
             <div class="nav-actions">
 
-                <button class="theme-toggle"
-                        id="theme-toggle"
-                        aria-label="Switch color theme">
-                    <span aria-hidden="true">☼</span>
+                <button
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    type="button"
+                    aria-label="Switch to light theme"
+                    title="Toggle color theme">
+                    <span aria-hidden="true">☀</span>
                 </button>
 
-                <a href="#contact" class="btn btn-primary nav-cta">
-                    Let's Talk
-                </a>
+                <button
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    type="button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="nav-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
 
             </div>
-
-        </nav>
-
+        </div>
     </header>
+
 
     <main>
 
         <!-- ================= HERO SECTION ================= -->
-
         <section class="hero section" id="home">
-
             <div class="container hero-container">
 
                 <div class="hero-content">
 
-                    <span class="hero-greeting">
-                        HELLO, I'M
-                    </span>
+                    <p class="hero-greeting">
+                        Hello, I'm
+                    </p>
 
                     <h1>
-                        Denis Mugo
-                        <span>Wambui.</span>
+                        Denis Mugo <span class="highlight">Wambui</span>
                     </h1>
 
-                    <h2>
+                    <h2 class="hero-title">
                         Software Developer
-                        <span>& Cybersecurity Enthusiast</span>
+                        <span class="highlight">&amp;</span>
+                        Cybersecurity Enthusiast
                     </h2>
 
                     <p class="hero-description">
-                        I build practical software solutions, explore
-                        modern technologies and continuously develop
-                        my skills in software engineering and cybersecurity.
+                        I build practical software solutions, develop modern
+                        web applications, and continuously explore technologies
+                        that make digital systems more secure, efficient,
+                        and reliable.
                     </p>
 
                     <div class="hero-buttons">
-
                         <a href="#projects" class="btn btn-primary">
                             Explore My Work
                         </a>
 
-                        <a href="assets/documents/CV by Denno.pdf"
-                           class="btn btn-outline"
-                           download>
-                            Download CV
+                        <a href="#contact" class="btn btn-outline">
+                            Get In Touch
                         </a>
-
                     </div>
 
                     <div class="hero-socials">
 
-                        <!-- Replace these URLs with your actual profiles -->
-
-                        <a href="https://github.com/Youngballer001"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="GitHub">
+                        <a
+                            href="https://github.com/Youngballer001"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit my GitHub profile">
                             GitHub
                         </a>
 
-                        <a href="https://www.linkedin.com/in/denis-mugo-wambui-b64344417/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="LinkedIn">
+                        <a
+                            href="https://www.linkedin.com/in/denis-mugo-wambui-b64344417/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit my LinkedIn profile">
                             LinkedIn
                         </a>
 
@@ -152,45 +147,40 @@
 
                 </div>
 
+
                 <div class="hero-image">
 
-                    <!-- Add your professional photograph here later -->
-                     <img src="/assets/images/Myself.jpeg">
-
-
-                    <div class="profile-placeholder"
-                         aria-label="Professional photograph placeholder">
-
-                        <span>DMW</span>
-
-                    </div>
+                   <img
+    src="assets/images/Myself.jpeg"
+    alt="Portrait of Denis Mugo Wambui"
+    class="profile-photo"
+    width="400"
+    height="400"
+    fetchpriority="high"
+    decoding="async"
+>
 
                     <div class="hero-image-decoration"></div>
 
                 </div>
 
             </div>
-
         </section>
 
+
         <!-- ================= ABOUT SECTION ================= -->
-
         <section class="about section" id="about">
-
             <div class="container">
 
                 <div class="section-heading">
-
-                    <span class="section-subtitle">GET TO KNOW ME</span>
-
-                    <h2>About <span>Me</span></h2>
-
+                    <p class="section-subtitle">Get to know me</p>
+                    <h2>About <span class="highlight">Me</span></h2>
                     <p>
-                        A little introduction to my professional journey,
-                        interests and approach to technology.
+                        A little about my background, interests, and approach
+                        to technology.
                     </p>
-
                 </div>
+
 
                 <div class="about-container">
 
@@ -198,662 +188,691 @@
 
                         <h3>
                             Building solutions through
-                            <span>technology and innovation.</span>
+                            <span class="highlight">technology</span>
                         </h3>
 
                         <p>
-                            I am a software developer with an interest
-                            in building reliable, functional and
-                            user-focused digital solutions.
+                            I'm a software developer with a strong interest in
+                            building reliable, user-focused applications and
+                            understanding how technology can solve real-world
+                            problems.
                         </p>
 
                         <p>
-                            My interests span software engineering,
-                            web development, backend systems and
-                            cybersecurity. I enjoy understanding how
-                            technologies work and applying that
-                            knowledge to practical projects.
+                            My development journey involves working with
+                            programming languages, backend technologies,
+                            databases, and modern web development tools.
+                            I enjoy turning ideas into functional applications
+                            while continuously improving my technical skills.
                         </p>
 
                         <p>
-                            I value continuous learning, problem-solving,
-                            collaboration and writing maintainable code.
-                            My goal is to develop solutions that address
-                            real-world challenges while continually
-                            growing as a technology professional.
+                            Beyond software development, I'm passionate about
+                            cybersecurity, exploring system security, and
+                            understanding how digital systems can be protected
+                            against potential threats.
                         </p>
-
-                        <a href="#contact" class="btn btn-primary">
-                            Get In Touch
-                        </a>
 
                     </div>
 
+
                     <div class="about-details">
 
-                        <div class="detail-item">
-                            <span class="detail-label">Name</span>
-                            <span class="detail-value">
-                                Denis Mugo Wambui
-                            </span>
+                        <div class="about-detail-card">
+                            <span class="detail-icon" aria-hidden="true">💻</span>
+                            <div>
+                                <h4>Development</h4>
+                                <p>Building practical software applications.</p>
+                            </div>
                         </div>
 
-                        <div class="detail-item">
-                            <span class="detail-label">Profession</span>
-                            <span class="detail-value">
-                                Software Developer
-                            </span>
+                        <div class="about-detail-card">
+                            <span class="detail-icon" aria-hidden="true">🔐</span>
+                            <div>
+                                <h4>Cybersecurity</h4>
+                                <p>Exploring digital security and system protection.</p>
+                            </div>
                         </div>
 
-                        <div class="detail-item">
-                            <span class="detail-label">Interests</span>
-                            <span class="detail-value">
-                                Software Development, Cybersecurity
-                            </span>
-                        </div>
-
-                        <div class="detail-item">
-                            <span class="detail-label">Location</span>
-                            <span class="detail-value">
-                                Kenya
-                            </span>
-                        </div>
-
-                        <div class="detail-item">
-                            <span class="detail-label">Availability</span>
-                            <span class="detail-value">
-                                Open to professional opportunities
-                            </span>
+                        <div class="about-detail-card">
+                            <span class="detail-icon" aria-hidden="true">🚀</span>
+                            <div>
+                                <h4>Continuous Learning</h4>
+                                <p>Improving through experimentation and projects.</p>
+                            </div>
                         </div>
 
                     </div>
 
                 </div>
-
             </div>
-
         </section>
 
+
         <!-- ================= SKILLS SECTION ================= -->
-
         <section class="skills section" id="skills">
-
             <div class="container">
 
                 <div class="section-heading">
-
-                    <span class="section-subtitle">
-                        WHAT I WORK WITH
-                    </span>
-
-                    <h2>Technical <span>Skills</span></h2>
-
+                    <p class="section-subtitle">What I work with</p>
+                    <h2>Technical <span class="highlight">Skills</span></h2>
                     <p>
                         Technologies and tools I use while developing
                         and exploring software solutions.
                     </p>
-
                 </div>
+
 
                 <div class="skills-grid">
 
-                    <article class="skill-card">
-
+                    <!-- Programming Languages -->
+                    <div class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">⌨️</div>
                         <h3>Programming Languages</h3>
 
-                        <ul class="skill-list">
-                            <li>Java</li>
-                            <li>Python</li>
-                            <li>C</li>
-                            <li>C++</li>
-                            <li>JavaScript</li>
-                        </ul>
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>C</span>
+                            <span>C++</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
 
-                    </article>
 
-                    <article class="skill-card">
+                    <!-- Web Development -->
+                    <div class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🌐</div>
+                        <h3>Web Development</h3>
 
-                        <h3>Frontend Development</h3>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
 
-                        <ul class="skill-list">
-                            <li>HTML5</li>
-                            <li>CSS3</li>
-                            <li>JavaScript</li>
-                            <li>Responsive Design</li>
-                        </ul>
 
-                    </article>
-
-                    <article class="skill-card">
-
+                    <!-- Backend Development -->
+                    <div class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">⚙️</div>
                         <h3>Backend Development</h3>
 
-                        <ul class="skill-list">
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>REST APIs</li>
-                        </ul>
+                        <div class="skill-tags">
+                            <span>Java</span>
+                            <span>Spring Boot</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </div>
 
-                    </article>
 
-                    <article class="skill-card">
-
+                    <!-- Databases -->
+                    <div class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🗄️</div>
                         <h3>Databases</h3>
 
-                        <ul class="skill-list">
-                            <li>MySQL</li>
-                            <li>Database Design</li>
-                            <li>SQL</li>
-                        </ul>
+                        <div class="skill-tags">
+                            <span>MySQL</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
 
-                    </article>
 
-                    <article class="skill-card">
-
+                    <!-- Development Tools -->
+                    <div class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🛠️</div>
                         <h3>Development Tools</h3>
 
-                        <ul class="skill-list">
-                            <li>Git</li>
-                            <li>GitHub</li>
-                            <li>Visual Studio Code</li>
-                            <li>Docker</li>
-                        </ul>
+                        <div class="skill-tags">
+                            <span>VS Code</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
 
-                    </article>
 
-                    <article class="skill-card">
-
+                    <!-- Areas of Interest -->
+                    <div class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🛡️</div>
                         <h3>Areas of Interest</h3>
 
-                        <ul class="skill-list">
-                            <li>Software Engineering</li>
-                            <li>Cybersecurity</li>
-                            <li>Problem Solving</li>
-                            <li>System Development</li>
-                        </ul>
-
-                    </article>
+                        <div class="skill-tags">
+                            <span>Cybersecurity</span>
+                            <span>Software Engineering</span>
+                            <span>System Security</span>
+                            <span>Problem Solving</span>
+                        </div>
+                    </div>
 
                 </div>
-
             </div>
-
         </section>
 
-        <!-- ================= PROJECTS SECTION ================= -->
+<!-- ================= PROJECTS SECTION ================= -->
+<section class="projects section" id="projects">
+    <div class="container">
 
-        <section class="projects section" id="projects">
+        <div class="section-heading">
+            <p class="section-subtitle">What I've been working on</p>
+            <h2>Featured <span class="highlight">Projects</span></h2>
+            <p>
+                A selection of software development projects that
+                demonstrate my technical skills, problem-solving
+                abilities, and practical experience.
+            </p>
+        </div>
 
-            <div class="container">
+        <!-- Project Filters -->
+        <div class="project-filters" aria-label="Filter projects">
 
-                <div class="section-heading">
+            <button
+                class="filter-btn active"
+                type="button"
+                data-filter="all"
+                aria-pressed="true">
+                All
+            </button>
 
-                    <span class="section-subtitle">
-                        MY RECENT WORK
+            <button
+                class="filter-btn"
+                type="button"
+                data-filter="java"
+                aria-pressed="false">
+                Java
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-filter="web"
+                aria-pressed="false">
+                Web Development
+            </button>
+
+            <button
+                class="filter-btn"
+                type="button"
+                data-filter="fullstack"
+                aria-pressed="false">
+                Full Stack
+            </button>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- ================= TASKFLOW ================= -->
+            <article class="project-card" data-category="fullstack java">
+
+                <div class="project-image project-placeholder">
+                    <span aria-hidden="true">📋</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-status">
+                        In Development
                     </span>
 
-                    <h2>Featured <span>Projects</span></h2>
+                    <h3>TaskFlow</h3>
 
                     <p>
-                        A selection of software projects demonstrating
-                        my technical skills and practical experience.
+                        A full-stack project management application
+                        designed to help teams organise projects,
+                        manage tasks, assign responsibilities, and
+                        track progress through a centralised platform.
                     </p>
 
-                </div>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>React</span>
+                        <span>MySQL</span>
+                        <span>Docker</span>
+                    </div>
 
-                <!-- Project filtering controls -->
-
-                <div class="project-filters"
-                     aria-label="Filter projects">
-
-                    <button class="filter-btn active"
-                            data-filter="all">
-                        All
-                    </button>
-
-                    <button class="filter-btn"
-                            data-filter="java">
-                        Java
-                    </button>
-
-                    <button class="filter-btn"
-                            data-filter="web">
-                        Web Development
-                    </button>
-
-                    <button class="filter-btn"
-                            data-filter="fullstack">
-                        Full Stack
-                    </button>
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/Youngballer001/taskflow"
+                            class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View TaskFlow source code on GitHub">
+                            View on GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
 
                 </div>
+            </article>
 
-                <div class="projects-grid" id="projects-grid">
 
-                    <!-- PROJECT 1 -->
+            <!-- ================= SCHOOL LIBRARY MANAGEMENT SYSTEM ================= -->
+            <article class="project-card" data-category="java web fullstack">
 
-                    <article class="project-card"
-                             data-project-card
-                             data-category="fullstack java">
-
-                        <div class="project-image project-placeholder">
-                            <span>01</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <span class="project-status">
-                                In Development
-                            </span>
-
-                            <h3>TaskFlow</h3>
-
-                            <p>
-                                A project management application designed
-                                to help users organize projects, manage
-                                tasks and monitor progress.
-                            </p>
-
-                            <div class="project-tech">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>React</span>
-                                <span>MySQL</span>
-                            </div>
-
-                            <div class="project-links">
-
-                                <a href="#contact"
-                                   class="project-link">
-                                    Project Details
-                                </a>
-
-                                <span>Coming Soon</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                    <!-- PROJECT 2 -->
-
-                    <article class="project-card"
-                             data-project-card
-                             data-category="java web">
-
-                        <div class="project-image project-placeholder">
-                            <span>02</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <span class="project-status">
-                                Backend Implemented
-                            </span>
-
-                            <h3>School Library Management System</h3>
-
-                            <p>
-                                A library management solution focused
-                                on organizing book records and supporting
-                                essential library operations.
-                            </p>
-
-                            <div class="project-tech">
-                                <span>Java</span>
-                                <span>Spring Boot</span>
-                                <span>MySQL</span>
-                                <span>HTML</span>
-                            </div>
-
-                            <div class="project-links">
-
-                                <a href="#contact"
-                                   class="project-link">
-                                    Project Details
-                                </a>
-
-                                <span>In Progress</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
-                    <!-- PROJECT 3 -->
-
-                    <article class="project-card"
-                             data-project-card
-                             data-category="web fullstack">
-
-                        <div class="project-image project-placeholder">
-                            <span>03</span>
-                        </div>
-
-                        <div class="project-content">
-
-                            <span class="project-status">
-                                In Development
-                            </span>
-
-                            <h3>Camp Brethren School Website</h3>
-
-                            <p>
-                                A school website project designed to
-                                provide institutional information,
-                                accessible content and administrative
-                                functionality.
-                            </p>
-
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS</span>
-                                <span>JavaScript</span>
-                            </div>
-
-                            <div class="project-links">
-
-                                <a href="#contact"
-                                   class="project-link">
-                                    Project Details
-                                </a>
-
-                                <span>In Progress</span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
-
+                <div class="project-image project-placeholder">
+                    <span aria-hidden="true">📚</span>
                 </div>
 
-            </div>
+                <div class="project-content">
 
-        </section>
+                    <span class="project-status">
+                        Backend Implemented
+                    </span>
+
+                    <h3>School Library Management System</h3>
+
+                    <p>
+                        A digital library management application
+                        designed to streamline library operations,
+                        including book management, student records,
+                        borrowing transactions, and fine management.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>REST API</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/Youngballer001/LibraryManagementSystem"
+                            class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View School Library Management System source code on GitHub">
+                            View on GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+
+            <!-- ================= JENGO HARDWARE ================= -->
+            <article class="project-card" data-category="web fullstack">
+
+                <div class="project-image project-placeholder">
+                    <span aria-hidden="true">🏗️</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-status">
+                        Project Repository
+                    </span>
+
+                    <h3>Jengo Hardware</h3>
+
+                    <p>
+                        An e-commerce platform for a hardware business,
+                        designed to showcase products and support online
+                        shopping, inventory management, order processing,
+                        and digital payment integration.
+                    </p>
+
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>M-Pesa</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://github.com/Youngballer001/JengaHardware"
+                            class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="View Jengo Hardware source code on GitHub">
+                            View on GitHub
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
 
         <!-- ================= EDUCATION SECTION ================= -->
-
         <section class="education section" id="education">
-
             <div class="container">
 
                 <div class="section-heading">
-
-                    <span class="section-subtitle">
-                        MY BACKGROUND
-                    </span>
-
-                    <h2>Education & <span>Certifications</span></h2>
-
+                    <p class="section-subtitle">My academic background</p>
+                    <h2>Education &amp; <span class="highlight">Learning</span></h2>
                     <p>
-                        My academic background and professional learning.
+                        My academic foundation and continued development
+                        in technology.
                     </p>
-
                 </div>
 
-                <div class="education-grid">
 
-                    <article class="education-card">
+                <div class="education-container">
 
-                        <span class="education-type">
-                            UNIVERSITY EDUCATION
-                        </span>
+                    <div class="education-card">
 
-                        <h3>Bachelor's Degree in Computer Science</h3>
+                        <div class="education-icon" aria-hidden="true">
+                            🎓
+                        </div>
 
-                        <h4>Kabarak University</h4>
+                        <div class="education-content">
 
-                        <p>
-                            Academic focus on computing, programming,
-                            software development and computer systems.
-                        </p>
+                            <span class="education-period">
+                                2025 – Present
+                            </span>
 
-                    </article>
+                            <h3>Bachelor of Science in Computer Science</h3>
 
-                    <article class="education-card">
+                            <h4>Kabarak University</h4>
 
-                        <span class="education-type">
-                            SECONDARY EDUCATION
-                        </span>
+                            <p>
+                                Pursuing a degree in Computer Science with
+                                an academic focus on computing principles,
+                                programming, software development, and
+                                problem-solving.
+                            </p>
 
-                        <h3>Secondary School Education</h3>
+                        </div>
+                    </div>
 
-                        <h4>Camp Brethren Christian High School</h4>
 
-                        <p>
-                            Completed secondary school education.
-                        </p>
+                    <div class="education-card">
 
-                    </article>
+                        <div class="education-icon" aria-hidden="true">
+                            🏫
+                        </div>
 
-                    <article class="education-card">
+                        <div class="education-content">
 
-                        <span class="education-type">
-                            CERTIFICATION
-                        </span>
+                            <span class="education-period">
+                                Secondary Education
+                            </span>
 
-                        <h3>Computer Packages</h3>
+                            <h3>Camp Brethren Christian High School</h3>
 
-                        <h4>Computer Packages Certificate</h4>
+                            <h4>Kenya Certificate of Secondary Education</h4>
 
-                        <p>
-                            Foundational computer applications
-                            and digital productivity skills.
-                        </p>
+                            <p>
+                                Completed secondary education, developing
+                                a foundation in academic learning,
+                                communication, and problem-solving.
+                            </p>
 
-                    </article>
+                        </div>
+                    </div>
 
                 </div>
-
             </div>
-
         </section>
 
+
         <!-- ================= CV SECTION ================= -->
-
         <section class="cv-section section" id="cv">
-
             <div class="container">
 
                 <div class="cv-container">
 
                     <div class="cv-content">
 
-                        <span class="section-subtitle">
-                            MY PROFESSIONAL PROFILE
-                        </span>
-
-                        <h2>Interested in my background?</h2>
-
-                        <p>
-                            Explore my professional CV for more
-                            information about my education, skills,
-                            projects and qualifications.
+                        <p class="section-subtitle">
+                            Want to know more?
                         </p>
 
-                        <a href="assets/documents/CV by Denno.pdf"
-                           class="btn btn-primary"
-                           download>
-                            Download My CV
+                        <h2>
+                            Explore My <span class="highlight">Resume</span>
+                        </h2>
+
+                        <p>
+                            Take a closer look at my background, technical
+                            skills, education, and development experience.
+                        </p>
+
+                        <a
+                            href="assets/documents/CV%20by%20Denno.pdf"
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            View My CV
+                        </a>
+
+                        <a
+                            href="assets/documents/CV%20by%20Denno.pdf"
+                            class="btn btn-outline"
+                            download>
+                            Download CV
                         </a>
 
                     </div>
 
-                    <div class="cv-decoration">
-                        <span>CV</span>
-                    </div>
-
                 </div>
-
             </div>
-
         </section>
 
+
         <!-- ================= CONTACT SECTION ================= -->
-
         <section class="contact section" id="contact">
-
             <div class="container">
 
                 <div class="section-heading">
-
-                    <span class="section-subtitle">
-                        LET'S CONNECT
-                    </span>
-
-                    <h2>Get In <span>Touch</span></h2>
-
+                    <p class="section-subtitle">Let's connect</p>
+                    <h2>Get In <span class="highlight">Touch</span></h2>
                     <p>
-                        Have an opportunity, project or idea?
-                        I'd be glad to connect.
+                        Have a project, opportunity, or idea you'd like
+                        to discuss? Feel free to reach out.
                     </p>
-
                 </div>
+
 
                 <div class="contact-container">
 
+                    <!-- Contact Information -->
                     <div class="contact-information">
 
-                        <h3>Let's start a conversation.</h3>
+                        <h3>Let's start a conversation</h3>
 
                         <p>
-                            Feel free to reach out regarding software
-                            development opportunities, collaboration
-                            or professional connections.
+                            I'm open to discussing software development,
+                            collaboration opportunities, and interesting
+                            technology projects.
                         </p>
 
-                        <div class="contact-item">
 
-                            <span>Email</span>
+                        <div class="contact-detail">
 
-                            <a href="mailto:YOUR_EMAIL@example.com">
-                                deniswambui752@gmail.com
-                            </a>
+                            <span class="contact-icon" aria-hidden="true">
+                                ✉️
+                            </span>
 
-                        </div>
-
-                        <div class="contact-item">
-
-                            <span>Location</span>
-
-                            <p>Kenya</p>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:deniswambui752@gmail.com">
+                                    deniswambui752@gmail.com
+                                </a>
+                            </div>
 
                         </div>
 
-                        <div class="contact-item">
 
-                            <span>GitHub</span>
+                        <div class="contact-detail">
 
-                            <a href="https://github.com/Youngballer001"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                GitHub Profile
-                            </a>
+                            <span class="contact-icon" aria-hidden="true">
+                                💻
+                            </span>
+
+                            <div>
+                                <h4>GitHub</h4>
+                                <a
+                                    href="https://github.com/Youngballer001"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    github.com/Youngballer001
+                                </a>
+                            </div>
 
                         </div>
 
-                        <div class="contact-item">
 
-                            <span>LinkedIn</span>
+                        <div class="contact-detail">
 
-                            <a href="https://www.linkedin.com/in/denis-mugo-wambui-b64344417/"
-                               target="_blank"
-                               rel="noopener noreferrer">
-                                LinkedIn Profile
-                            </a>
+                            <span class="contact-icon" aria-hidden="true">
+                                🔗
+                            </span>
+
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a
+                                    href="https://www.linkedin.com/in/denis-mugo-wambui-b64344417/"
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    LinkedIn Profile
+                                </a>
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <!-- Frontend form; submission will be connected later -->
+<!-- Contact Form -->
+<form
+    class="contact-form"
+    id="contact-form"
+    action="https://formspree.io/f/mjywgrbn"
+    method="POST">
 
-                    <form class="contact-form"
-                          id="contact-form">
+    <div class="form-group">
 
-                        <div class="form-group">
+        <label for="name">Your Name</label>
 
-                            <label for="name">Your Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            autocomplete="name"
+            minlength="2"
+            maxlength="80"
+            required>
 
-                            <input type="text"
-                                   id="name"
-                                   name="name"
-                                   placeholder="Enter your name"
-                                   required>
+    </div>
 
-                        </div>
 
-                        <div class="form-group">
+    <div class="form-group">
 
-                            <label for="email">Your Email</label>
+        <label for="email">Your Email</label>
 
-                            <input type="email"
-                                   id="email"
-                                   name="email"
-                                   placeholder="Enter your email"
-                                   required>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+            autocomplete="email"
+            maxlength="254"
+            required>
 
-                        </div>
+    </div>
 
-                        <div class="form-group">
 
-                            <label for="subject">Subject</label>
+    <div class="form-group">
 
-                            <input type="text"
-                                   id="subject"
-                                   name="subject"
-                                   placeholder="What would you like to discuss?"
-                                   required>
+        <label for="subject">Subject</label>
 
-                        </div>
+        <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="What would you like to discuss?"
+            minlength="3"
+            maxlength="120"
+            required>
 
-                        <div class="form-group">
+    </div>
 
-                            <label for="message">Message</label>
 
-                            <textarea id="message"
-                                      name="message"
-                                      rows="6"
-                                      placeholder="Write your message..."
-                                      required></textarea>
+    <div class="form-group">
 
-                        </div>
+        <label for="message">Your Message</label>
 
-                        <button type="submit"
-                                class="btn btn-primary">
-                            Send Message
-                        </button>
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message here..."
+            minlength="10"
+            maxlength="5000"
+            required></textarea>
 
-                        <p id="form-feedback"
-                           class="form-feedback"
-                           aria-live="polite"></p>
+    </div>
 
-                    </form>
+
+    <button type="submit" class="btn btn-primary">
+        Send Message
+    </button>
+
+    <p
+        id="form-feedback"
+        class="form-feedback"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true">
+    </p>
+
+</form>
 
                 </div>
-
             </div>
-
         </section>
 
     </main>
 
-    <!-- ================= FOOTER ================= -->
 
+    <!-- ================= FOOTER ================= -->
     <footer class="footer">
 
         <div class="container footer-container">
 
             <a href="#home" class="logo">
-                DENIS<span>.</span>
+                <span class="logo-bracket">&lt;</span>Denis<span class="logo-bracket">/&gt;</span>
             </a>
 
             <p>
-                Designed and developed by Denis Mugo Wambui.
+                Designed and developed by
+                <span class="highlight">Denis Mugo Wambui</span>.
             </p>
+
+            <div class="footer-socials">
+
+                <a
+                    href="https://github.com/Youngballer001"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/denis-mugo-wambui-b64344417/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+
+                <a href="mailto:deniswambui752@gmail.com">
+                    Email
+                </a>
+
+            </div>
 
             <p class="copyright">
                 &copy; <span id="current-year"></span>
@@ -864,8 +883,8 @@
 
     </footer>
 
-    <!-- ================= JAVASCRIPT ================= -->
 
+    <!-- ================= JAVASCRIPT ================= -->
     <script src="js/projects.js" defer></script>
     <script src="js/contact.js" defer></script>
     <script src="js/main.js" defer></script>
