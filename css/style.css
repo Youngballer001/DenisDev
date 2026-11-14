@@ -598,6 +598,7 @@ ul {
     display: none !important;
 }
 
+
 /* Project Thumbnail */
 
 .project-image {
@@ -608,6 +609,59 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* =========================================
+   PROJECT IMAGES
+========================================= */
+
+.project-card {
+    overflow: hidden;
+}
+
+/* Image styling */
+.project-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 12px 12px 0 0;
+
+    transition: transform 0.45s ease;
+}
+
+/* Subtle zoom effect */
+.project-card:hover .project-image {
+    transform: scale(1.04);
+}
+
+/* Keep project content properly spaced */
+.project-content {
+    padding: 24px;
+}
+
+/* Mobile image adjustments */
+@media (max-width: 540px) {
+    .project-image {
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .project-image {
+        transition: none;
+    }
+
+    .project-card:hover .project-image {
+        transform: none;
+    }
 }
 
 .project-placeholder {
